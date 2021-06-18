@@ -1,0 +1,37 @@
+<div class="py-5">
+    <div class="card">
+        <div class="card-header">
+            Editando empleado
+        </div>
+        <div class="card-body text-center">
+            <form action="/empleados/edit-empleado/{{_id}}?_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+                <div class="input-group mb-3">
+                    <input type="text" name="nombres" class="form-control" placeholder="Nombres:" value="{{nombres}}">
+                    <input type="text" name="apellidos" class="form-control" placeholder="Apellidos:"
+                        value="{{apellidos}}">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="number" name="edad" class="form-control" placeholder="Edad:" value="{{edad}}">
+                    <input type="telefono" name="telefono" class="form-control" placeholder="Telefono:"
+                        value="{{telefono}}">
+                    <input type="date" name="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento:"
+                        value="{{fecha_nacimiento}}">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="email" name="correo" class="form-control" placeholder="Correo electronico:"
+                        value="{{correo}}">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" name="direccion" class="form-control" placeholder="Direccion:"
+                        value="{{direccion}}">
+                </div>
+                <br>
+                <button class="btn btn-primary btn-block" type="submit">Actualizar</button>
+            </form>
+        </div>
+    </div>
+    <div class="text-center py-3">
+        <a href="/empleados" class="btn btn-primary">Regresar</a>
+    </div>
+</div>
